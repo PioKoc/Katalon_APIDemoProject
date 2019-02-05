@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuite1,,,2019-02-05 12:59:45,2019-02-05 12:59:58,"12,527s",PASSED
+,,,,,,
+Test Cases/CalculatorTests/Addition,,,2019-02-05 12:59:46,2019-02-05 12:59:52,"6,102s",PASSED
+"sendRequest(findTestObject(""CalculatorSoapService/Addition""))",,,2019-02-05 12:59:46,2019-02-05 12:59:50,"3,393s",PASSED
+"response = sendRequestAndVerify(findTestObject(""CalculatorSoapService/Addition""))",,,2019-02-05 12:59:50,2019-02-05 12:59:52,"2,055s",PASSED
+"verifyElementPropertyValue(response, ""AddResponse.AddResult"", ""6"")",,,2019-02-05 12:59:52,2019-02-05 12:59:52,"0,074s",PASSED
+,,,,,,
+Test Cases/GetBankDetails,,,2019-02-05 12:59:52,2019-02-05 12:59:52,"0,433s",PASSED
+return null,,,2019-02-05 12:59:52,2019-02-05 12:59:52,"0,001s",PASSED
+,,,,,,
+Test Cases/ListUsersTest,,,2019-02-05 12:59:52,2019-02-05 12:59:55,"2,433s",PASSED
+"sendRequest(findTestObject(""UserWebService/ListUsers""))",,,2019-02-05 12:59:53,2019-02-05 12:59:54,"1,171s",PASSED
+"response = sendRequestAndVerify(findTestObject(""UserWebService/ListUsers""))",,,2019-02-05 12:59:54,2019-02-05 12:59:55,"0,775s",PASSED
+"verifyElementPropertyValue(response, ""data[1].first_name"", ""Charles"")",,,2019-02-05 12:59:55,2019-02-05 12:59:55,"0,028s",PASSED
+"verifyElementPropertyValue(response, ""data[2].id"", ""6"")",,,2019-02-05 12:59:55,2019-02-05 12:59:55,"0,032s",PASSED
+"verifyElementsCount(response, ""data"", 3)",,,2019-02-05 12:59:55,2019-02-05 12:59:55,"0,037s",PASSED
+"verifyResponseStatusCodeInRange(response, 100, 200)",,,2019-02-05 12:59:55,2019-02-05 12:59:55,"0,008s",PASSED
+,,,,,,
+Test Cases/TestHTTPMethods,,,2019-02-05 12:59:55,2019-02-05 12:59:58,"3,098s",PASSED
+"sendRequestAndVerify(findTestObject(""UserWebService/ListUsers""))",,,2019-02-05 12:59:55,2019-02-05 12:59:56,"0,970s",PASSED
+"sendRequestAndVerify(findTestObject(""UserWebService/DeleteUser""))",,,2019-02-05 12:59:56,2019-02-05 12:59:57,"0,625s",PASSED
+"sendRequestAndVerify(findTestObject(""UserWebService/UpdateUser""))",,,2019-02-05 12:59:57,2019-02-05 12:59:57,"0,604s",PASSED
+"sendRequestAndVerify(findTestObject(""UserWebService/CreateUser""))",,,2019-02-05 12:59:57,2019-02-05 12:59:58,"0,694s",PASSED

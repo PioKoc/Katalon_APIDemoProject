@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS_ApiDemoProject,,,2019-02-05 12:39:44,2019-02-05 12:39:56,"12,173s",FAILED
+,,,,,,
+Test Cases/CalculatorTests/Addition,,,2019-02-05 12:39:44,2019-02-05 12:39:51,"6,118s",PASSED
+"sendRequest(findTestObject(""CalculatorSoapService/Addition""))",,,2019-02-05 12:39:45,2019-02-05 12:39:49,"3,552s",PASSED
+"response = sendRequestAndVerify(findTestObject(""CalculatorSoapService/Addition""))",,,2019-02-05 12:39:49,2019-02-05 12:39:51,"1,960s",PASSED
+"verifyElementPropertyValue(response, ""AddResponse.AddResult"", ""6"")",,,2019-02-05 12:39:51,2019-02-05 12:39:51,"0,081s",PASSED
+,,,,,,
+Test Cases/TestHTTPMethods,,,2019-02-05 12:39:51,2019-02-05 12:39:54,"3,637s",PASSED
+"sendRequestAndVerify(findTestObject(""UserWebService/ListUsers""))",,,2019-02-05 12:39:51,2019-02-05 12:39:52,"1,463s",PASSED
+"sendRequestAndVerify(findTestObject(""UserWebService/DeleteUser""))",,,2019-02-05 12:39:52,2019-02-05 12:39:53,"0,506s",PASSED
+"sendRequestAndVerify(findTestObject(""UserWebService/UpdateUser""))",,,2019-02-05 12:39:53,2019-02-05 12:39:54,"0,682s",PASSED
+"sendRequestAndVerify(findTestObject(""UserWebService/CreateUser""))",,,2019-02-05 12:39:54,2019-02-05 12:39:54,"0,699s",PASSED
+,,,,,,
+Test Cases/ListUsersTest,,,2019-02-05 12:39:54,2019-02-05 12:39:56,"1,789s",FAILED
+"sendRequest(findTestObject(""UserWebService/ListUsers""))",,,2019-02-05 12:39:54,2019-02-05 12:39:55,"0,782s",PASSED
+"response = sendRequestAndVerify(findTestObject(""UserWebService/ListUsers""))",,,2019-02-05 12:39:55,2019-02-05 12:39:56,"0,669s",PASSED
+"verifyElementPropertyValue(response, ""data[1].first_name"", ""Charles"")",,,2019-02-05 12:39:56,2019-02-05 12:39:56,"0,027s",PASSED
+"verifyElementPropertyValue(response, ""data[2].id"", ""6"")",,,2019-02-05 12:39:56,2019-02-05 12:39:56,"0,022s",PASSED
+"verifyElementsCount(response, ""data"", 4)",,,2019-02-05 12:39:56,2019-02-05 12:39:56,"0,040s",FAILED
+,,,,,,
+Test Cases/GetBankDetails,,,2019-02-05 12:39:56,2019-02-05 12:39:56,"0,216s",PASSED
+return null,,,2019-02-05 12:39:56,2019-02-05 12:39:56,"0,001s",PASSED

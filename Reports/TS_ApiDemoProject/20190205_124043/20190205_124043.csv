@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS_ApiDemoProject,,,2019-02-05 12:40:47,2019-02-05 12:40:59,"12,116s",PASSED
+,,,,,,
+Test Cases/CalculatorTests/Addition,,,2019-02-05 12:40:48,2019-02-05 12:40:54,"6,278s",PASSED
+"sendRequest(findTestObject(""CalculatorSoapService/Addition""))",,,2019-02-05 12:40:48,2019-02-05 12:40:52,"3,570s",PASSED
+"response = sendRequestAndVerify(findTestObject(""CalculatorSoapService/Addition""))",,,2019-02-05 12:40:52,2019-02-05 12:40:54,"2,109s",PASSED
+"verifyElementPropertyValue(response, ""AddResponse.AddResult"", ""6"")",,,2019-02-05 12:40:54,2019-02-05 12:40:54,"0,081s",PASSED
+,,,,,,
+Test Cases/TestHTTPMethods,,,2019-02-05 12:40:54,2019-02-05 12:40:57,"3,285s",PASSED
+"sendRequestAndVerify(findTestObject(""UserWebService/ListUsers""))",,,2019-02-05 12:40:54,2019-02-05 12:40:55,"1,127s",PASSED
+"sendRequestAndVerify(findTestObject(""UserWebService/DeleteUser""))",,,2019-02-05 12:40:55,2019-02-05 12:40:56,"0,647s",PASSED
+"sendRequestAndVerify(findTestObject(""UserWebService/UpdateUser""))",,,2019-02-05 12:40:56,2019-02-05 12:40:56,"0,542s",PASSED
+"sendRequestAndVerify(findTestObject(""UserWebService/CreateUser""))",,,2019-02-05 12:40:56,2019-02-05 12:40:57,"0,724s",PASSED
+,,,,,,
+Test Cases/ListUsersTest,,,2019-02-05 12:40:57,2019-02-05 12:40:59,"1,923s",PASSED
+"sendRequest(findTestObject(""UserWebService/ListUsers""))",,,2019-02-05 12:40:57,2019-02-05 12:40:58,"0,874s",PASSED
+"response = sendRequestAndVerify(findTestObject(""UserWebService/ListUsers""))",,,2019-02-05 12:40:58,2019-02-05 12:40:59,"0,666s",PASSED
+"verifyElementPropertyValue(response, ""data[1].first_name"", ""Charles"")",,,2019-02-05 12:40:59,2019-02-05 12:40:59,"0,023s",PASSED
+"verifyElementPropertyValue(response, ""data[2].id"", ""6"")",,,2019-02-05 12:40:59,2019-02-05 12:40:59,"0,027s",PASSED
+"verifyElementsCount(response, ""data"", 3)",,,2019-02-05 12:40:59,2019-02-05 12:40:59,"0,032s",PASSED
+"verifyResponseStatusCodeInRange(response, 100, 200)",,,2019-02-05 12:40:59,2019-02-05 12:40:59,"0,008s",PASSED
+,,,,,,
+Test Cases/GetBankDetails,,,2019-02-05 12:40:59,2019-02-05 12:40:59,"0,213s",PASSED
+return null,,,2019-02-05 12:40:59,2019-02-05 12:40:59,"0,000s",PASSED

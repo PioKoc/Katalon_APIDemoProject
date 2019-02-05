@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuite1,,,2019-02-05 13:11:24,2019-02-05 13:11:31,"6,720s",PASSED
+,,,,,,
+Test Cases/ListUsersTest,,,2019-02-05 13:11:25,2019-02-05 13:11:31,"6,146s",PASSED
+"sendRequest(findTestObject(""UserWebService/ListUsers""))",,,2019-02-05 13:11:26,2019-02-05 13:11:30,"4,051s",PASSED
+"response = sendRequestAndVerify(findTestObject(""UserWebService/ListUsers""))",,,2019-02-05 13:11:30,2019-02-05 13:11:31,"1,224s",PASSED
+"verifyElementPropertyValue(response, ""data[1].first_name"", ""Charles"")",,,2019-02-05 13:11:31,2019-02-05 13:11:31,"0,029s",PASSED
+"verifyElementPropertyValue(response, ""data[2].id"", ""6"")",,,2019-02-05 13:11:31,2019-02-05 13:11:31,"0,075s",PASSED
+"verifyElementsCount(response, ""data"", 3)",,,2019-02-05 13:11:31,2019-02-05 13:11:31,"0,045s",PASSED
+"verifyResponseStatusCodeInRange(response, 100, 200)",,,2019-02-05 13:11:31,2019-02-05 13:11:31,"0,019s",PASSED
